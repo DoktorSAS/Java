@@ -2,9 +2,10 @@
 ```
 class Ex{
  public static <T extends Comparable<T>> boolean sym(T v[][])
- {for(int i=0;i<v.length;i++) 
-   if (v[i].length != v.length) 
-    return false;
+ {
+    for(int i=0;i<v.length;i++) 
+      if (v[i].length != v.length) 
+        return false;
     
   for(int i=0;i<v.length;i++)
    for(int j=0;j<v[i].length;j++)
