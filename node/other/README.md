@@ -9,3 +9,27 @@ punto standard. NaN generalmente significa che il valore è qualcosa che non pu�
 Una conversione comporterà questo valore, quando il valore da convertire è qualcos'altro, ad esempio quando si converte una stringa che non rappresenta un numero.
 
 [Maggiori informazioni](https://www.it-swarm.dev/it/java/java-cosa-significa-nan/969824867/)
+
+
+### Esempio Di NaN
+
+Completate il corpo del metodo boolean ok(Node v, int x) in modo che restituisca vero se e solo se eseguire metodo(v,x) 
+non restituisce nè eccezioni nè valori NaN nè infinity.
+```
+ public static void metodo(Node p, int x)
+  {
+      for(  ;x>=0;x--) 
+      {
+      p.setElem(x);
+      p=p.getNext();
+      }
+  }  
+
+  public static boolean ok(Node p, int x)
+  {
+     for( ;x>=0;x--)  
+     {
+     if (p==null) return false; p=p.getNext();}
+     return true;
+  }
+```
