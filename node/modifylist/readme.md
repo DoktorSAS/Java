@@ -64,3 +64,31 @@ public void modifica(){
     }
   }
   ```
+  ##### Soluzione Alternativa
+  
+  ```
+  public void modifica(){ // Fra
+	  if(first.getNext() != null) {
+		  Node clone = this.first;
+		  first = new Node(clone.getElem(), null);
+		  while(clone.getNext() != null) {
+			clone = clone.getNext();
+		    insert(clone.getElem());
+		  }
+		  for (Node p= first; p != null; p = p.getNext()) { 
+		        int s=0;
+		        for (Node q = p.getNext() ; q != null; q = q.getNext()) { 
+		          s=s+q.getElem();
+		        }
+		        
+		        p.setElem(p.getElem()+s);
+		      }
+		  clone = this.first;
+		  first = new Node(clone.getElem(), null);
+		  while(clone.getNext() != null) {
+			clone = clone.getNext();
+		    insert(clone.getElem());
+		  }
+	  } 
+  ```
+  
