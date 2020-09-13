@@ -37,3 +37,26 @@ non restituisce nè eccezioni nè valori NaN nè infinity.
      return true;
   }
 ```
+#### Verifichiamo il funzionamento
+Inserendo infatti dei valori e delle debug print, possiamo verificare il funzionamento del codice.
+```
+ public static boolean ok(Node p, int x)
+	  {
+	     for( ;x>=0;x--)  
+	     {
+	    	
+	        if (p==null){// Automaticamente se il nodo risulta vuoto l'operazione richiesta verrà rifiutata
+	        	System.out.println("P ha valore Null per x che vale " + x);
+	        	return false; 
+	        }else {
+	        	System.out.println("P NON ha valore Null per x che vale " + x);
+	        }
+	        p=p.getNext();
+	     }
+	     // Se tutto va bene, ovvero non ci sono nodi vuoti che vanno da X a 0 allorà verrà restituito true e l'operazione verrà eseguita
+	     return true;
+	  }
+```
+
+![](https://i.imgur.com/V1WZf0A.png)
+
