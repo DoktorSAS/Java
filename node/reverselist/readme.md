@@ -8,10 +8,10 @@ public static Node reverse(Node p, Node q){
 		      return q;
 		}else {
 			System.out.println("Value Rev: " + p.getElem());
-		    return rev(p.getNext(),new Node(p.getElem(),q));
+		    return reverse(p.getNext(),new Node(p.getElem(),q));
 		}
 }
 public static Node reverse(Node p){
-		return rev(p,new Node(p.getElem(),null));
+		return reverse(p,new Node(p.getElem(),null));
 	}
 ```
