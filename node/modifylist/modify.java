@@ -1,5 +1,9 @@
 package test;
-/*
+/*Compilare i campi che seguono:
+ * NOME        :
+ * COGNOME     :
+ * MATRICOLA   :
+ * N. MACCHINA :
  *
  * Implementare un metodo "modifica" di MyList che aggiunge ad ogni elemento della 
  *  lista la somma degli elementi che lo precedono
@@ -21,7 +25,7 @@ package test;
  * Non e` consentito modificare in alcun modo il codice al di fuori
  * del metodo "modifica".
  *
-*/
+ */
 
 // Node.java
 class Node {
@@ -109,8 +113,8 @@ class MyList {
     	i++;
     }
   }
-	
-	public void modifica2(){ // Fra
+  
+  public void modifica2(){ // Fra
 	  if(first.getNext() != null) {
 		  Node clone = this.first;
 		  first = new Node(clone.getElem(), null);
@@ -133,6 +137,7 @@ class MyList {
 		    insert(clone.getElem());
 		  }
 	  } 
+  }
 }
 
 public class Main {
