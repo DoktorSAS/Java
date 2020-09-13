@@ -29,7 +29,11 @@ non restituisce nè eccezioni nè valori NaN nè infinity.
   {
      for( ;x>=0;x--)  
      {
-     if (p==null) return false; p=p.getNext();}
+        if (p==null) // Automaticamente se il nodo risulta vuoto l'operazione richiesta verrà rifiutata
+          return false; 
+        p=p.getNext();
+     }
+     // Se tutto va bene, ovvero non ci sono nodi vuoti che vanno da X a 0 allorà verrà restituito true e l'operazione verrà eseguita
      return true;
   }
 ```
