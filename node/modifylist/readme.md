@@ -92,3 +92,4 @@ public void modifica(){
 	  } 
   ```
   
+**PS** Il modo migliore per modificare una lsita è ri-crearla inserendo i nuovi dati
