@@ -1,6 +1,6 @@
 # Modifica di una Lista
 
-Prendendo come esempio l'esercizzio seguente possiamo sviluppare un metodo per modficare la liste nel modo richiesto
+Prendendo come esempio l'esercizio seguente possiamo sviluppare un metodo per modficare la liste nel modo richiesto
 
 Implementare un metodo "modifica" di MyList che aggiunge ad ogni elemento della 
 lista la somma degli elementi che lo precedono
